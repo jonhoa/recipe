@@ -16,5 +16,10 @@ class RecipeController < ApplicationController
     recipe.save
     render json: recipe.as_json
   end
+  def destroy
+    recipe = Cook.find_by(id: params[:id])
+    recipe.delete
+    render json: {message: "Recipe deleted"}
+  end
 end
 

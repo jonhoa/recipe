@@ -13,4 +13,5 @@ Content-Type: application/json
  "instructions": "Grow nicely in the bayou"
 }
 
-
+###
+DELETE http://localhost:3000/recipes/3.json
