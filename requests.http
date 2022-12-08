@@ -1,8 +1,8 @@
 GET http://localhost:3000/recipes.json
-###
+###Show item
 GET http://localhost:3000/recipes/4.json
 
-###
+###Update
 PATCH http://localhost:3000/recipes/1.json
 Content-Type: application/json
 
@@ -13,5 +13,16 @@ Content-Type: application/json
  "instructions": "Grow nicely in the bayou"
 }
 
-###
-DELETE http://localhost:3000/recipes/3.json
+###Delete
+DELETE http://localhost:3000/recipes/7.json
+
+###Create
+POST http://localhost:3000/recipes.json
+Content-Type: application/json
+
+{
+  "name": "Yogurt",
+  "ingredients": "Milk and fermenter",
+  "prep_time": "30",
+  "instructions": "Mix milk and stir, cook evenly for 2 hours, swirl the shake up"
+}
