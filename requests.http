@@ -1,1 +1,16 @@
 GET http://localhost:3000/recipes.json
+###
+GET http://localhost:3000/recipes/4.json
+
+###
+PATCH http://localhost:3000/recipes/1.json
+Content-Type: application/json
+
+{
+ "name": "Avocado",
+ "prep_time": "1",
+ "ingredients": "Fresh Avocado",
+ "instructions": "Grow nicely in the bayou"
+}
+
+
